@@ -2,7 +2,7 @@ from tkinter import *
 root = Tk()
 root.iconbitmap('c:\GUI\logo.ico')
 root.title('Calculator')
-# root.resizable(False, False)
+root.resizable(False, False)
 
 e = Entry(root, width=40, borderwidth=5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=20)
