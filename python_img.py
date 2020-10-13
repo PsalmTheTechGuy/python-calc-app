@@ -3,11 +3,11 @@ from PIL import ImageTk, Image
 root = Tk()
 root.iconbitmap('c:\GUI\logo.ico')
 root.title('Calculator')
-# root.resizable(False, False)
+root.resizable(False, False)
 
-# image_1 = ImageTk.PhotoImage(Image.open('MBA cash.jpg'))
-# label_1 = Label(root, image=image_1)
-# label_1.place(x=0, y=0, relwidth=1, relheight=1)
+image_one = ImageTk.PhotoImage(Image.open('computer.jpg'))
+image_label = Label(root, image=image_one)
+image_label.place(x=0, y=0, relwidth=1, relheight=1)
 
 e = Entry(root, width=40, borderwidth=5)
 e.grid(row=0, column=0, columnspan=3, padx=10, pady=20)
